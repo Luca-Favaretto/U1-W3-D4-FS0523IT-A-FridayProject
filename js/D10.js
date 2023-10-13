@@ -144,6 +144,7 @@ const whatDayIsIt = () => {
   ];
   return week[new Date().getDay() - 1];
 };
+
 console.log(whatDayIsIt());
 
 /* ESERCIZIO 8
