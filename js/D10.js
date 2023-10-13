@@ -427,8 +427,10 @@ console.log("Es29");
 const isItPrime = num => {
   if (num < 1) {
     console.log("Numero non primo.");
+    return true;
   } else if (num === 2 || num === 3) {
     console.log("Numero primo.");
+    return true;
   } else if (num % 2 === 0) {
     console.log("Numero pari, quindi non primo.");
   } else {
@@ -442,6 +444,7 @@ const isItPrime = num => {
 
     if (isPrime) {
       console.log("Numero primo.");
+      return true;
     } else {
       console.log(`Il numero ${num} non è primo.`);
     }
